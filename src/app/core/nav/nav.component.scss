@@ -1,0 +1,14 @@
+nav{
+    background-color: black;
+    height: 140px;
+    ul{
+        display:flex;
+        justify-content: space-around;
+        list-style: none;
+        padding-top: 20px;
+        a{
+            color: white;
+            text-decoration: none;
+        }
+    }
+}

@@ -1,0 +1,10 @@
+<p>animals works!</p>
+<div *ngIf="animalsList">
+    <ul>
+        <div>
+            <li *ngFor="let animal of animalsList">
+                <h1>{{animal.name}}</h1>
+            </li>
+        </div>
+    </ul>
+</div>

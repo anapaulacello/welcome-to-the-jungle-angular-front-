@@ -1,0 +1,10 @@
+<p>habitats works!</p>
+<div *ngIf="habitatsList">
+    <ul>
+        <div>
+            <li *ngFor="let habitat of habitatsList">
+                <h1>{{habitat.name}}</h1>
+            </li>
+        </div>
+    </ul>
+</div>
