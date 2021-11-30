@@ -2,7 +2,7 @@
 <div *ngIf="animalsList">
     <ul>
         <div>
-            <li *ngFor="let animal of animalsList">
+            <li *ngFor="let animal of animalsList" routerLink="{{animal.id}}">
                 <h1>{{animal.name}}</h1>
             </li>
         </div>

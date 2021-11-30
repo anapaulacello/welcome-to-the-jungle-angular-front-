@@ -16,6 +16,11 @@ export class AnimalsService {
     return this.httpClient.get(this.ANIMALS_URL)
   }
 
+  public getAllAnimalByName(id:any){
+    return this.httpClient.get(`${this.BASE_URL}/animal/${id}`)
+  }
+
+
   public createAnimal(data:any){
     return this.httpClient.post(this.CREATE_ANIMALS_URL,data)
   }

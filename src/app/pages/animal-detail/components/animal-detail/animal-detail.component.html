@@ -1,0 +1,10 @@
+<div *ngIf="animalFound">
+    <h1>{{animalFound.id}}</h1>
+    <h1>{{animalFound.name}}</h1>
+    <p>{{animalFound.isCarnivore?'come carne':'no come carne'}}</p>
+    <h4>familia:{{animalFound.family.name}}</h4>
+    <p>{{animalFound.family.livingInGroup?'vive en manada':'no vive en manada'}}</p>
+    <h4>{{animalFound.family.habitat.name}}</h4>
+    <p>{{animalFound.family.habitat.location}}</p>
+    <p>{{animalFound.family.habitat.mode}}</p>
+</div>

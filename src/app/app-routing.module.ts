@@ -14,6 +14,10 @@ const routes: Routes = [
     path: `animals`, loadChildren: () =>
       import('./pages/animals/animals.module').then(m => m.AnimalsModule)
   },
+  {
+    path: `animals/:id`, loadChildren: () =>
+      import('./pages/animal-detail/animal-detail.module').then(m => m.AnimalDetailModule)
+  },
   { path: ``, redirectTo: `home`, pathMatch: `full` }
 ];
 

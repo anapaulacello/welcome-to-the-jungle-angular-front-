@@ -1,4 +1,4 @@
-import { AnimalsModel } from './../../models/animals.model';
+import { AnimalsModel } from '../../../../shared/models/animals.model';
 import { Component, OnInit } from '@angular/core';
 import { AnimalsService } from 'src/app/shared/services/animals.service';
 

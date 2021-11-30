@@ -1,21 +1,21 @@
 export interface General {
     nav:Nav;
-    gallery:Gallery[];
-    about:About;
+    animal:Animals[];
+    habitat:Habitats[];
 }
 export interface Nav{
     title:string;
-    img:Img;
 }
 
-export interface Gallery{
-    title:string;
-    img:Img;
+export interface Animals{
+    id:string;
+    name:string;
+    isCarnivore:boolean;
+    family:string;
 }
-
-export interface About{}
-
-export interface Img{
-    src:string;
-    alt:string;
+export interface Habitats{
+    id:string;
+    name:string;
+    location:string;
+    mode: string;
 }

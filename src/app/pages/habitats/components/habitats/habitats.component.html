@@ -1,9 +1,11 @@
-<p>habitats works!</p>
-<div *ngIf="habitatsList">
-    <ul>
-        <div>
-            <li *ngFor="let habitat of habitatsList">
+<div class="habitat" *ngIf="habitatsList">
+    <ul class="habitat-list">
+        <div class="habitat_item-container">
+            <li class="habitat-list_item" *ngFor="let habitat of habitatsList" >
+                <h1>{{habitat.id}}</h1>
                 <h1>{{habitat.name}}</h1>
+                <p>{{habitat.location}}</p>
+                <p>{{habitat.mode}}</p>
             </li>
         </div>
     </ul>

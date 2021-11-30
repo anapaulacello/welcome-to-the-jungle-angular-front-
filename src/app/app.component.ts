@@ -13,23 +13,20 @@ export class AppComponent {
   constructor(){
     this.general={
       nav:{
-        title:'my Angulr aplication ',
-        img:{
-          src:'',
-          alt:''
-        }
+        title:'',
       },
-      gallery:[{
-        title:'my Angulr aplication ',
-        img:{
-          src:'',
-          alt:''
-        }
-        
+      animal:[{
+        id:'',
+        name:'',
+        isCarnivore:true,
+        family:''
       }],
-      about:{
-        
-      }
+      habitat:[{
+        id:'',
+        name:'',
+        location:'',
+        mode:''
+      }]
     }
   }
 }
