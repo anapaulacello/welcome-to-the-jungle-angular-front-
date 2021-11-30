@@ -1,0 +1,22 @@
+.detail-container{
+    background-image:linear-gradient(rgba(21, 77, 16, 0.8),rgba(0, 0, 0, 0.80)),url("https://static01.nyt.com/images/2019/07/26/world/26india-tiger/merlin_143415126_a711fe0c-92f6-41fd-b92c-ff33c0a7bec8-superJumbo.jpg");
+    min-height:100vh;
+    background-position:center;
+    display: flex;
+    align-items:center;
+    justify-content:center;
+
+    .detail_card-container{
+        border:2px solid white;
+        .card_item{
+            color: white;
+            padding:20px;
+            font-size:20px;
+        }
+        .card_item-title{
+            color: white;
+            padding:20px;
+            font-size:30px;
+        }
+    }
+}

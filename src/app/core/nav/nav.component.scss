@@ -1,14 +1,85 @@
-nav{
-    background-color: black;
-    height: 140px;
-    ul{
-        display:flex;
-        justify-content: space-around;
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@600&family=Source+Code+Pro:ital,wght@0,200;0,400;1,300&display=swap');
+.navbar-wrapper {
+    background-color: #194100;
+    position: fixed;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    z-index: 10;
+    transition: all 400ms ease-out;
+  
+    &--opened {
+      width: 100vw;
+      height: 100vh;
+      opacity: 1;
+      transition: all 400ms ease-in-out;
+    }
+    .button-nav{
+      background-color: #194100;
+      position:absolute;
+      background-color: transparent;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      .button-icon{
+        width:50px;
+        height:50px;
+        padding: 30px;
+        cursor: pointer;
+        &:hover{
+            transform:scale(1.05);
+            transition: 0.2s ease-in-out;
+          }
+      }
+    }
+
+    .navbar-content {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      height:auto;
+      width: 100vw;
+      &__list {
         list-style: none;
-        padding-top: 20px;
-        a{
-            color: white;
+        padding: 25%;
+        &__item {
+          margin: 35px;
+          display: flex;
+          align-items: center;
+          &:hover{
+            transform: scale(0.97);
+            transition: ease-in-out 0.2s;
+          }
+          a {
+            font-family: 'Source Code Pro', monospace;
+            font-size: 30px;
             text-decoration: none;
+            letter-spacing: 2px;
+            padding: 5px 10px;
+            text-transform: uppercase;
+            color: white;
+
+
+          }
         }
+      }
+      .navbar-content__list{
+        padding: 20px;
+        min-height:100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
+    }
+  }
+  
+
+@media (max-width:400px){
+    .letras{
+        display: none;
     }
 }

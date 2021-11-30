@@ -1,10 +1,12 @@
-<nav>
-    <div class="na-container">
-        <ul>
-            <a routerLink="/" >home</a>
-            <a routerLink="/animals" >animals</a>
-            <a routerLink="/habitats" >habitats</a>
-            <a routerLink="/new/animal" >new</a>
-        </ul>
+<div class="navbar-wrapper" [ngClass]="{ 'navbar-wrapper--opened': showNav }">
+    <div role="button" class="button-nav" (click)="closeNavbar()"><img src="https://imgur.com/lpN3jsf.png" alt="menu-icon" class="button-icon">
     </div>
-</nav>
+    <nav class="navbar-content">
+        <ul class="navbar-content__list">
+            <li class="navbar-content__list__item" *ngFor="let element of nav.item; let intedx=index">
+                <a routerLink="{{element.link}}" (click)="closeNavbar()">{{element.name}}</a>
+            </li>
+        </ul>
+    </nav>
+</div>
+

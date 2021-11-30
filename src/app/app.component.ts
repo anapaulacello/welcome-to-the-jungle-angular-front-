@@ -1,4 +1,4 @@
-import { General } from './models/general';
+import { NavModels } from './shared/models/nav-models';
 import { Component } from '@angular/core';
 
 @Component({
@@ -8,25 +8,29 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'lazy-loading-project';
-  public general!:General;
+  public nav!:NavModels;
 
   constructor(){
-    this.general={
-      nav:{
-        title:'',
-      },
-      animal:[{
-        id:'',
-        name:'',
-        isCarnivore:true,
-        family:''
-      }],
-      habitat:[{
-        id:'',
-        name:'',
-        location:'',
-        mode:''
-      }]
+    this.nav={
+      item:[
+        {
+          name: "HOME",
+          link: "/home",
+        },
+        {
+          name: "ANIMALES",
+          link: "/animals"
+        },
+        {
+          name: "HABITATS",
+          link: "/habitats"
+        }
+      ]
     }
   }
+  public isOpenNavbar = false;
+
+public showNavbar () {
+  this.isOpenNavbar = !this.isOpenNavbar;
+}
 }

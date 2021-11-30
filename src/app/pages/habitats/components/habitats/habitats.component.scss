@@ -1,14 +1,29 @@
-.habitat-list{
-    display: flex;
-    flex-direction:row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    list-style: none;
-    .habitat_item-container{
-        .habitat-list_item{
-            border: 2px solid black;
-            margin: 10px;
-        }
+.habitat-container{
+    background-image:linear-gradient(rgba(21, 77, 16, 0.8),rgba(0, 0, 0, 0.80)),url("https://cdn.wallpapersafari.com/28/51/uONoDk.jpg");
+    background-position:center;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+
+    .habitat-list-container{
+        display: flex;
+        flex-direction:row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        list-style: none;
+        padding-top: 150px;
+        .habitat-list_card{
+            padding: 20px;
+            margin: 30px 0;
+            min-width: 300px;
+            border: 2px solid white;
+            h1{
+                color:white;
+            }
+            p{
+                color:white;
+            }
         
+        }
     }
 }

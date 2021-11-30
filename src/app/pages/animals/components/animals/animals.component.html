@@ -1,10 +1,7 @@
-<p>animals works!</p>
-<div *ngIf="animalsList">
-    <ul>
-        <div>
-            <li *ngFor="let animal of animalsList" routerLink="{{animal.id}}">
-                <h1>{{animal.name}}</h1>
+<div *ngIf="animalsList" class="animal-container">
+    <ul class="animal_list-container">
+            <li class="animal-list_item" *ngFor="let animal of animalsList" routerLink="{{animal.id}}">
+                <h2>{{animal.name}}</h2>
             </li>
-        </div>
     </ul>
 </div>
