@@ -5,7 +5,7 @@ import { HttpClient } from '@angular/common/http';
   providedIn: 'root'
 })
 export class HabitatsService {
-  public BASE_URL:string="http://localhost:4000"
+  public BASE_URL:string="https://welocome-to-the-jungle.vercel.app"
   public HABITATS_URL:string=`${this.BASE_URL}/habitat/allHabitat`
   public CREATE_HABITATS_URL:string=`${this.BASE_URL}/habitat/create`
   public DELETE_HABITATS_URL:string=`${this.BASE_URL}/habitat/delete`

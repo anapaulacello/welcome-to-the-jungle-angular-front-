@@ -5,7 +5,7 @@ import { HttpClient } from '@angular/common/http';
   providedIn: 'root'
 })
 export class AnimalsService {
-  public BASE_URL:string="http://localhost:4000"
+  public BASE_URL:string="https://welocome-to-the-jungle.vercel.app"
   public ANIMALS_URL:string=`${this.BASE_URL}/animal/allAnimal`
   public CREATE_ANIMALS_URL:string=`${this.BASE_URL}/animal/create`
   public DELETE_ANIMALS_URL:string=`${this.BASE_URL}/animal/delete`
