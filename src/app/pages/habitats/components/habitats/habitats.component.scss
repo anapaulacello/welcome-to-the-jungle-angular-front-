@@ -8,15 +8,18 @@
 
     .habitat-list-container{
         display: flex;
-        flex-direction:row;
+        flex-direction:column;
         flex-wrap: wrap;
-        justify-content: space-around;
+        justify-content:center;
         list-style: none;
         padding-top: 150px;
+        
+        align-items: center;
         .habitat-list_card{
             padding: 20px;
             margin: 30px 0;
             min-width: 300px;
+            max-width:400px;
             border: 2px solid white;
             h1{
                 color:white;
